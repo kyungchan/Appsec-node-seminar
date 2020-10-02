@@ -13,27 +13,6 @@
                   label="Password"
                   type="password"
                   counter=""
-                  :rules="[
-                    (v) => !!v || `Required`,
-                    (v) =>
-                      (!!v && v.length > 4) ||
-                      `Password는 5글자 이상이어야합니다.`,
-                  ]"
-                ></v-text-field>
-                <v-text-field
-                  v-model="userModel.passwordConf"
-                  label="Password 확인"
-                  type="password"
-                  counter=""
-                  :rules="[
-                    (v) => !!v || `Required`,
-                    (v) =>
-                      (!!v && v.length > 4) ||
-                      `Password는 5글자 이상이어야합니다.`,
-                    (v) =>
-                      (!!v && v == userModel.password) ||
-                      `Password와 맞지 않습니다.`,
-                  ]"
                 ></v-text-field>
                 <v-text-field
                   label="Name"

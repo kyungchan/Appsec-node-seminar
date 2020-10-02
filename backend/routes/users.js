@@ -4,7 +4,6 @@ var express = require("express");
 var router = express.Router();
 
 const userModel = require("../odm/users");
-
 router.post("/", (req, res) => {
   userModel
     .create(req.body)

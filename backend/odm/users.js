@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema({
   name: { type: String, required: true },
   position: { type: String },
   contact: { type: String },
-  at: { type: String },
+  at: { type: String, default: "Lab" },
   createdAt: { type: Date, default: new Date() },
 });
 

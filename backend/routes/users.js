@@ -28,26 +28,4 @@ router.get("/", (req, res) => {
     });
 });
 
-router.patch("/:userId", (req, res) => {
-  userModel
-    .updateOne({ id: req.params.userId }, req.body)
-    .then(() => res.sendStatus(200))
-    .catch((err) => {
-      console.log(err);
-      res.sendStatus(400);
-    });
-});
-
-router.get("/:userId", (req, res) => {
-  userModel
-    .create(req.body)
-    .then(() => {
-      res.sendStatus(201);
-    })
-    .catch((err) => {
-      console.log(err);
-      res.sendStatus(400);
-    });
-});
-
 module.exports = router;

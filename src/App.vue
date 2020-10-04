@@ -4,23 +4,6 @@
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       <v-toolbar-title>Appsec</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-menu offset-y>
-        <template v-slot:activator="{ on, attrs }">
-          <v-btn color="primary" class="elevation-0" v-on="on" v-bind="attrs"
-            ><v-icon left>mdi-login</v-icon>Login</v-btn
-          >
-        </template>
-        <v-list>
-          <v-list-item dense>
-            <v-icon left>mdi-account-circle</v-icon>
-            <v-list-item-title>My Page</v-list-item-title>
-          </v-list-item>
-          <v-list-item dense>
-            <v-icon left>mdi-logout</v-icon>
-            <v-list-item-title>Logout</v-list-item-title>
-          </v-list-item>
-        </v-list>
-      </v-menu>
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer" absolute temporary>

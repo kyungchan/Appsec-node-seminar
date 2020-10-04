@@ -97,39 +97,7 @@ export default {
       contact: "",
     },
     userDialog: false,
-    items: [
-      { name: "홍길동", position: "교수", contact: "test@test.com", at: "In" },
-      {
-        name: "김철수",
-        position: "석사연구생",
-        contact: "test@test.com",
-        at: "In",
-      },
-      {
-        name: "김나래",
-        position: "석사연구생",
-        contact: "test@test.com",
-        at: "In",
-      },
-      {
-        name: "박민정",
-        position: "학부연구생",
-        contact: "test@test.com",
-        at: "In",
-      },
-      {
-        name: "구민지",
-        position: "학부연구생",
-        contact: "test@test.com",
-        at: "In",
-      },
-      {
-        name: "현승철",
-        position: "학부연구생",
-        contact: "test@test.com",
-        at: "In",
-      },
-    ],
+    items: [],
     headers: [
       { text: "Id", value: "id" },
       { text: "Name", value: "name" },

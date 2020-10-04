@@ -1,3 +1,4 @@
+const tag = "[dbconnect.js]";
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 
@@ -12,10 +13,10 @@ module.exports = () => {
         useUnifiedTopology: true,
       })
       .then(() => {
-        console.log("Mongodb Connected");
+        console.log(tag, "Mongodb Connected");
       })
       .catch((err) => {
-        console.log("MongoDB error: ", err);
+        console.log(tag, "MongoDB error: ", err);
       });
   }
   connect();

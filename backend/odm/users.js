@@ -7,6 +7,7 @@ const userSchema = new mongoose.Schema({
   position: { type: String },
   contact: { type: String },
   at: { type: String, default: "Lab" },
+  role: { type: String, default: "user" },
   createdAt: { type: Date, default: new Date() },
 });
 

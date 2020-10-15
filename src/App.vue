@@ -28,8 +28,8 @@
             </v-list-item-icon>
             <v-list-item-title>Home</v-list-item-title>
           </v-list-item>
-          <v-subheader>Admin</v-subheader>
-          <v-list-item link to="/users">
+          <v-subheader v-if="role == 'admin'">Admin</v-subheader>
+          <v-list-item link to="/users" v-if="role == 'admin'">
             <v-list-item-icon>
               <v-icon>mdi-account</v-icon>
             </v-list-item-icon>
@@ -39,6 +39,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-main>
+      <div id="test1">이거말하는건가요</div>
       <v-fade-transition mode="out-in">
         <router-view :key="$route.fullPath"></router-view>
       </v-fade-transition>
@@ -74,6 +75,9 @@ export default {
     userId() {
       return this.$store.state.id;
     },
+    role() {
+      return this.$store.state.role;
+    },
   },
   data: () => ({
     drawer: false,
@@ -81,3 +85,8 @@ export default {
   }),
 };
 </script>
+
+<style>
+#test1 {
+}
+</style>

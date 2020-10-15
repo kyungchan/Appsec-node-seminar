@@ -26,6 +26,7 @@
       <v-col cols="12" class="text-center"><h3>출입현황판</h3></v-col>
       <v-col cols="12">
         <v-data-table
+          id="test"
           :footer-props="{
             'items-per-page-options': [10, 25, 50, 100, -1],
           }"
@@ -97,4 +98,12 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+#test {
+  background-color: blue;
+}
+
+#test .v-data-table-header {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+</style>

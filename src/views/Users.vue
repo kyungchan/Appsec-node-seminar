@@ -24,7 +24,7 @@
                   label="Password"
                   :rules="[
                     (v) => !!v || '필수로 입력해주세요.',
-                    (v) => (!!v && v.length > 5) || '5글자 이상 입력해주세요',
+                    (v) => (!!v && v.length > 4) || '5글자 이상 입력해주세요',
                   ]"
                   type="password"
                   counter=""
